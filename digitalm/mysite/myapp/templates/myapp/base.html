@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="shadow-lg">
+        <div class="flex felx-wrap justify-between ml-5 items-center mx-auto px-4 py-2.5">
+            <a href="" class="flex items-center">
+                <img class="h-9 mr-3" src="https://cdn2.iconfinder.com/data/icons/vivid/48/cart-256.png" alt="">
+                <span class="self-center text-xml font-semibold">Digital Market</span>
+            </a>
+            <div class="flex items-center">
+                <a href="{% url 'dashboard' %}" class="mr-6 text-sm font-medium text-grey">Dashboard</a>
+                <a href="{% url 'sales' %}" class="mr-6 text-sm font-medium text-grey">Sales</a>
+                <a href="" class="mr-6 text-sm font-medium text-grey">Orders</a>
+                <a href="{% url 'create_product' %}" class="mr-6 text-sm font-medium text-grey">Create Products</a>
+                <a href="{% url 'purchases' %}" class="mr-6 text-sm font-medium text-grey">My Purchases</a>
+                <a href="{% url 'logout' %}" class="mr-6 text-sm font-medium text-grey">Logout</a>
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+
+    {% endblock %}
+</body>
+</html>
